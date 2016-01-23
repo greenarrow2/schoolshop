@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:tx="http://www.springframework.org/schema/tx"  
+    xmlns:context="http://www.springframework.org/schema/context"    
+    xmlns:mvc="http://www.springframework.org/schema/mvc"    
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+    http://www.springframework.org/schema/tx   
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+    http://www.springframework.org/schema/mvc  
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+    <context:annotation-config/>
+    	 <context:component-scan base-package="com.schoolcloud.schoolshop" >
+    	  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
+    	 </context:component-scan>
+    <!-- 默认的注解映射的支持 -->  
+  <mvc:annotation-driven content-negotiation-manager="contentNegotiationManager" /> 
+  <bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">   
+    <property name="favorPathExtension" value="false" />  
+    <property name="favorParameter" value="false" />   
+    <property name="ignoreAcceptHeader" value="false" />   
+    <property name="mediaTypes" >   
+      <value>  
+        atom=application/atom+xml  
+        html=text/html  
+        json=application/json  
+        *=*/*  
+      </value>   
+    </property>  
+  </bean>
+    
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+        <property name="defaultEncoding" value="UTF-8"/>  
+        <!-- 指定所上传文件的总大小不能超过5MB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 -->  
+        <property name="maxUploadSize" value="5000000"/>  
+    </bean>  
+<bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">    
+    <property name="supportedMediaTypes">    
+        <list>    
+            <value>application/json;charset=UTF-8</value>    
+       </list>    
+    </property>  
+	</bean>
+  <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">      
+        <property name="messageConverters">      
+            <list >      
+                <ref bean="mappingJacksonHttpMessageConverter" />      
+            </list>      
+        </property>      
+    </bean>
+  <!--   <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">  
+    <property name="interceptors">  
+        <list>  
+            <ref bean="openEntityManagerInViewInterceptor" />  
+        </list>  
+    </property>   
+</bean>   -->
+    <mvc:resources location="/WEB-INF/admin/" mapping="/WEB-INF/admin/**"/>
+    <!-- 视图解释类 -->  
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/admin/"/>  
+        <property name="suffix" value=".jsp"/><!--可为空,方便实现自已的依据扩展名来选择视图解释类的逻辑  -->  
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />  
+    </bean>  
+</beans>

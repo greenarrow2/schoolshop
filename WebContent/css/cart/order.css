@@ -1,0 +1,120 @@
+/* 
+    Document   : cart
+    Created on : 2013-9-9, 12:14:51
+    Author     : YouRi wei_ai_2008@sina.com
+    Description:
+    Purpose of the stylesheet follows.
+*/
+
+/*购物车*/
+@charset "utf-8";
+/**
+    @copyright "齐派送电子商务有限公司";
+    @creationDate "2013-09-06-11:07";
+    @vision "bestln1.01";
+    @author "bobo";
+*/
+/* CSS Document */
+body{font-family: "宋体", Arial, Helvetica, sans-serif; font-size:12px; background-color:#f1f1f1; *_behavior:url("ie6hover.htc");}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-family:inherit;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:underline;}
+ol,ul,li{list-style:none;}
+.class{/*b90父集，类名自定义，不可为标准模型NO：overflow:hiden;*/}
+.b90{width:990px; margin:0 auto; clear:both;}/* 宽度框架（用于打破盒子模型，重新定位son子集的子集！） */
+.son{/*b90子集，类名统一，重塑盒子模型，不可为标准模型NO：overflow:hiden;*/}
+.left,.lefter{float:left;}
+.right,.righter{float:right;}
+#bestln .hot{color:#90c31f;}
+#bestln .red{color:red;}
+#bestln .gray{color:#888;}
+.bb{font-weight:bold;}
+.topbar{width:100%; overflow:hidden; position:relative;}
+.shelf{width:100%; height:30px; overflow:hidden; background: url(../images/ln_A_01.png) repeat-x; position:relative;}
+.shelf span{line-height:30px; color:#585858;}
+.shelf span a{color:#585858;}
+.shelf span a:hover{color:black;}
+.application{width:100%; height:66px; overflow:hidden; position:relative;}
+.app{padding-left:150px; height:66px; line-height:66px; font-family:"微软雅黑"; font-size:18px; background:url(../../image/cart/ln_ML_01.png) no-repeat center left; color:#959595;}
+.foott{width:100%; overflow:hidden; position:relative;}
+.foott .son{width:100%; height:100px;}
+.foott .son p{width:100%; text-align:center; line-height:30px; padding-top:10px;}
+.foott .son p a{color:black;}
+/* ↑头尾结束，内容开始↓ */
+.bread{width:100%; position:relative;}
+.bread .son{width:100%; margin:0 auto; position:relative;}
+.bread .son .box{width:708px; height:46px; position:absolute; top:-42px; left:282px; background:url(../../image/cart/ln_Car_01.png) no-repeat;}
+.bread .son .box ul{width:100%; height:46px;}
+.bread .son .box ul li{width:25%; float:left; padding-top:31px; text-align:center; font-size:14px; color:#888;}
+.bread .son .box ul li.on{color:black;}
+.position{width:100%; overflow:hidden; margin-top:15px; position:relative;}
+.position .son{width:100%; height:46px; line-height:46px; background:url(../images/ln_Car_02.png) no-repeat top left;}
+.position .son span{color:#585858;}
+.position .son span a{display:block; width:50px; height:26px; overflow:hidden; margin-top:10px; text-indent:-10em; background:url(../images/ln_Car_03.png) no-repeat;}
+.UserCartOne{width:100%; position:relative;}
+.UserCartOne .son{width:100%; position:relative;}
+.UserCartOne .son .one{width:100%; overflow:hidden; border-top:3px solid #666; background:#fff;}
+.UserCartOne .son .one ul{width:100%;}
+.UserCartOne .son .one ul li{width:100%; height:75px; overflow:hidden; line-height:18px; text-align:center; border-bottom:1px solid #e8e8e8;}
+#bestln .hui{height:40px; line-height:40px; color:#888;}
+.UserCartOne .son .one ul li .l1{width:298px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l2{width:76px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l3{width:80px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l4{width:90px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l5{width:120px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l6{width:85px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l7{width:84px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l8{width:79px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l9{width:78px; height:100%; overflow:hidden; float:left;}
+.UserCartOne .son .one ul li .l1 div{padding:9px 8px 9px 14px;}
+.UserCartOne .son .one ul li .l1 span{display:block; width:200px; padding-top:20px; text-align:left;}
+.UserCartOne .son .one ul li .l1 span a{color:#585858;}
+.UserCartOne .son .one ul li .l1 span a:hover{text-decoration:underline; color:#90c31f;}
+.UserCartOne .son .one ul li .l2 span,.UserCartOne .son .one ul li .l3 span,.UserCartOne .son .one ul li .l4 span,.UserCartOne .son .one ul li .l6 span,.UserCartOne .son .one ul li .l7 span,.UserCartOne .son .one ul li .l9 span{display:block; margin-top:20px; color:#585858;}
+.UserCartOne .son .one ul li .l5 div{width:88px; margin:0 auto; padding-top:20px;}
+.UserCartOne .son .one ul li .l5 div a{display:block; width:20px; height:20px; overflow:hidden; float:left; text-indent:-10em;}
+.UserCartOne .son .one ul li .l5 div a.sub{background:url(../../image/cart/ln_Car_04.png) no-repeat;}
+.UserCartOne .son .one ul li .l5 div a.sub:hover{ background-position:0px -20px;}
+.UserCartOne .son .one ul li .l5 div a.add{background:url(../../image/cart/ln_Car_04.png) no-repeat -20px 0px;}
+.UserCartOne .son .one ul li .l5 div a.add:hover{ background-position:-20px -20px;}
+.UserCartOne .son .one ul li .l5 div .text{width:36px; height:16px; float:left; margin:0px 5px; text-align:center; border:1px solid #e8e8e8;}
+.UserCartOne .son .one ul li .l8 div{width:44px; margin:0 auto; margin-top:15px;}
+.UserCartOne .son .one ul li .l8 div a{display:block; border:1px solid #e8e8e8;}
+.UserCartOne .son .one ul li .l8 div a:hover{border-color:#90c31f;}
+.UserCartOne .son .one ul li .l3 span,.UserCartOne .son .one ul li .l9 span a{color:#888;}
+.UserCartOne .son .one ul li .l9 span a:hover{text-decoration:underline;}
+.tips{width:100%; height:30px; padding:30px 0px;}
+.tips .left{padding-left:40px; *_display:inline;}
+.tips .left a{display:block; width:95px; height:30px; overflow:hidden; text-indent:-10em; background:url(../../image/cart/ln_Car_05.png) no-repeat;}
+.tips .left a:hover{background-position:-95px 0px;}
+.tips .right{margin-right:20px; *_display:inline;}
+.tips .right p{line-height:30px; color:#585858;}
+.tips .right p strong{font-size:14px; font-weight:bold;}
+.tips .right p.right a{display:block; width:133px; height:30px; overflow:hidden; margin-left:8px; text-indent:-10em; background:url(../../image/cart/ln_Car_07.png) no-repeat bottom left;}
+.tips .right p.right a:hover{background-position:-133px 3px;}
+.tips .right p.right a:active{background-position:-266px 3px;}
+.barer{width:100%; height:11px; background:url(../images/ln_Car_08.png) no-repeat; clear:both;}
+.UserCartOne .son .two{width:100%; overflow:hidden; background:#fff;}
+.UserCartOne .son .two .str{display:block; width:100%; height:44px; overflow:hidden; line-height:50px; font-family:"微软雅黑"; font-size:18px; border-bottom:3px solid #c1dd81; text-indent:32px; color:#90c31f;}
+.UserCartOne .son .two small{display:block; width:912px; padding:32px 0px 16px 0px; margin:0 auto; font-size:12px;}
+.UserCartOne .son .two ul{width:912px; overflow:hidden; padding-bottom:13px; margin:0 auto;}
+.UserCartOne .son .two ul li{width:100%; overflow:hidden; line-height:18px; border-top:1px dashed #e8e8e8; color:#585858;}
+.UserCartOne .son .two ul li .l1{float:left; padding-top:21px;}
+.UserCartOne .son .two ul li .l2{float:left; padding:3px 5px;}
+.UserCartOne .son .two ul li .l3{float:left; width:90px; padding:14px 20px 0px 20px;}
+.UserCartOne .son .two ul li .l3 p a{color:#585858;}
+.UserCartOne .son .two ul li .l3 p a:hover{text-decoration:underline; color:#90c31f;}
+.UserCartOne .son .two ul li .l4{float:left; padding:14px 20px 0px 20px;}
+.UserCartOne .son .two ul li .l5{float:left; padding:14px 20px 0px 20px;}
+.UserCartOne .son .two ul li .l6{float:left; padding:14px 20px 0px 20px; color:#888;}
+.UserCartOne .son .two ul li .l6 span a{text-decoration:underline; color:#90c31f;}
+.UserCartOne .son .two .pay{width:100%; height:78px; background-color:#edf7d6;}
+.UserCartOne .son .two .pay .left{width:725px; height:100%;}
+.UserCartOne .son .two .pay .left p{width:100%; padding-top:32px; text-align:right; color:#585858;}
+.UserCartOne .son .two .pay .left p strong{font-size:14px; font-weight:bold;}
+.UserCartOne .son .two .pay .right span{display:block; padding-top:20px; padding-right:33px;}
+.UserCartOne .son .two .pay .right span a{display:block; width:219px; height:45px; overflow:hidden; text-indent:-10em; background:url(../images/ln_Car_09.png) no-repeat;}
+.UserCartOne .son .two .pay .right span a:hover{background-position:-219px 0px;}
+.UserCartOne .son .two .pay .right span a:active{background-position:-438px 0px;}

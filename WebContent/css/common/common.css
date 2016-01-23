@@ -1,0 +1,165 @@
+/* 
+    Document   : common 首页头部的底部样式
+    Created on : 2014-1-17, 15:08:24
+    Author     : l
+    Description:
+    Purpose of the stylesheet follows.
+    @charset "utf-8";
+*/
+body{font-family: "宋体", Arial, Helvetica, sans-serif; font-size:12px; *_behavior:url("../htc/ie6hover.htc");overflow-x: hidden;}
+.red{ color: red;}
+.reder{color: #ac2c2c;}
+.gray{ color: #888;}
+.lefter {float: left;}
+.righter {float: right;}
+body{ background-image:url(about:blank); background-attachment:fixed;/*IE6必要，防抖动*/ }
+.main_bestln{ margin: 0 auto; overflow: hidden;padding-bottom: 20px;}
+.w1210{width: 1210px; margin-left: auto; margin-right: auto; clear: both;}
+.w990{width: 990px; margin: 0 auto; clear: both; overflow: hidden;}
+/*顶部工具栏*/
+.toolbar{width: 100%; height: 30px; overflow: hidden; line-height: 30px; background:url(../../image/images/ln_A_01.png) repeat-x;}
+.toolbar span,.toolbar span a{ color: #585858;}
+.toolbar span a:hover,.hotwords a:hover{ color: black;}
+.toolbar a img{ vertical-align: middle; _padding-top:5px;}
+/*logl查询购物车*/
+.logo{width:100%; height:90px; margin:0 auto;}
+.logo_son{ height: 100%;}
+.search{width:542px; overflow:hidden; padding:21px 0px 0px 40px;}
+.search .box{width:100%; height:28px; overflow:hidden; background:url(../../image/index/ln_A_03.png) no-repeat;}
+.search input{display:block; overflow:hidden; padding:4px 6px; float:left; line-height:20px; border:0px none; background-color:transparent;}
+.inp1{width:471px; height:20px; font-size:12px; color:#585858;}
+.inp2{width:59px; height:28px; text-indent:-10em; -webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; background:url(../../image/index/ln_A_04.png) no-repeat; cursor:pointer;}
+.inp2:hover{background-position:-59px 0px;}
+.hotwords{padding-top: 7px; color: #888;}
+.hotwords a{color: #888;}
+.hotwords .hot{ color:#90c31f;}
+.hotwords .hot:hover{color:#90c31f;}
+.logo .myln{float: left; position: relative; z-index: 999; width: 415px; height: 90px;}
+.logo .cartNum{position: absolute; z-index: 10; left: 318px; z-index: 998;}
+.logo .cartNum .uper,.logo .cartNum .down{ background: url(../../image/images/ln_A_25.png) no-repeat;height: 26px; position: absolute;top: 13px;}
+.logo .cartNum .down{ width: 10px;}
+.logo .cartNum .uper{ width: auto; line-height: 20px; color: white; padding-right: 10px; left: 10px; background-position: right;}
+.logo dl.dl0{width: 120px; height: 32px; overflow: hidden; position: absolute; top: 29px; }
+.logo dl.dl0 dt{width: 118px; height: 30px; line-height: 30px; float: right; text-indent: 47px; border: 1px solid #e8e8e8; overflow: hidden; background: url(../../image/images/ln_A_05.png) no-repeat 0 0;}
+.logo dl.dl0 dt a{color:#585858; float: left;}
+.logo dl.dl0 dt a:hover{ text-decoration:underline; color:#90c31f;}
+.logo dl.dl1{left:298px; z-index: 997;}
+.logo dl.dl2{left:168px; z-index: 996;}
+.logo dl.dl2 dt{background-position: 0 -30px;}
+.logo dl.dl1 dt i{ float: right; width: 11px; height: 11px; background: url(../../image/images/ln_A_01.gif); margin: 11px 8px;transition: all 0.3s ease-out;}
+.logo dl.dl1:hover dt i{transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg);  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);}
+.logo dl.dl0 dd{display: block; width: 100%; overflow: hidden;}
+.carLTtop{width: 100%; height: 67px; overflow: hidden; background: url(../../image/images/ln_A_08.png) no-repeat 0 2px; position: relative;}
+.logo dl.dl1:hover{width:370px; height:auto; overflow:hidden; left:48px;}
+.logo dl.dl1:hover dt{ border-bottom: none;}
+.carLTtop a{ display: block; width: 233px;height: 35px; margin: 0 auto; text-indent: -10em; margin-top: 17px; background: url(../../image/images/ln_A_12.png) no-repeat;}
+.carLTtop a:hover{background-position: -233px;}
+.carLTtop span{ position: absolute; z-index: 2; width: 123px; height: 36px; right: 0; top: 0; background: url(../../image/images/ln_A_07.png) no-repeat;}
+.carList{ width: 100%; height: auto;background: url(../../image/images/ln_A_09.png) repeat-y;}
+.carList ul,.carList .topay{width: 358px; margin: 0 auto; padding-bottom: 10px; overflow: hidden; background: white;}
+.carList ul li{ width:346px; margin: 0 auto; overflow: hidden; border-bottom: 1px dashed #e8e8e8; padding: 10px 0 5px 0;}
+.carList ul li .mnb{width: 58px; height:42px;background: url(../../image/images/ln_A_02.gif) no-repeat left center;margin-top: 11px;}
+.carList ul li .mnb .fl{width: 25px; height: 42px; overflow: hidden;}
+.carList ul li .mnb .fl input{width: 100%; height: 38px; line-height: 38px; text-align: center; border: 0 none;background-color:transparent;}
+.carList ul li .mnb .fr{width: 33px; height: 42px; overflow: hidden;}
+.carList ul li .mnb .fr div{ height: 21px; cursor: pointer; text-indent: -10em;}
+.carList ul li .mnb .fr .add:hover{ background: url(../../image/images/ln_A_02b.gif) right top;}
+.carList ul li .mnb .fr .del:hover{ background: url(../../image/images/ln_A_02b.gif) right bottom;}
+.carList ul li .img{ width: 64px; height: 64px;}
+.carList ul li .txt{ width: 186px; height: 64px; line-height: 18px; }
+.carList ul li .txt p a {color: #333;}
+.carList ul li .txt p a:hover {color:#90c31f;}
+.carList ul li .txt strong{ line-height: 18px; font-family: "微软雅黑"; font-size: 14px;font-weight: 700; color: #ac2c2c;}
+.carList ul li .txt strong span{ font-family: "宋体"; color: #888;}
+.carList ul li .dbar{ float: right; cursor: pointer;}
+.carList .topay{ line-height: 26px;}
+.carList .topay p{ margin-left: 6px;}
+.carList .topay font{ color: #ac2c2c; margin: 0 3px; font-family: Arial; font-weight: bold;}
+.carList .topay strong{ font-family: "微软雅黑"; color: #ac2c2c; font-weight: bold;}
+.carList .topay a{float: right; width: 72px; height: 26px; background: url(../../image/images/ln_A_11.png); overflow: hidden; text-indent: -10em; margin-right: 6px;}
+.carList .topay a:hover{ background-position: -72px 0px;}
+.carLBottom{width: 100%; height: 37px; background: url(../../image/images/ln_A_10.png) no-repeat bottom;}
+/*导航栏*/
+.menuContainer{ width: 100%;  margin: 0 auto; height: 40px;}
+.menuContainer .son{  background: #90c31f; position: relative;z-index: 0; }
+.leftMenu {position: relative; top: -40px;}
+.mainNav{ position: absolute; z-index: 9; background: #90c31f; left: 0px;  top: 0; color: white; font-size: 16px; font-weight: 900; }
+.mainNav ul {margin-left: 210px;display: inline;float: left;}
+.mainNav ul li{ float: left;height: 40px;   line-height: 40px; text-align: center; overflow: hidden;}
+.mainNav ul li a{height: 40px; float: left; color: white; overflow: hidden; padding:0 15px;}
+.mainNav ul li img {position: absolute;z-index: 99;float: left;margin-left: -40px; margin-top: -10px;}
+.mainNav ul li a:hover{color: white; background: #688d16;}
+/*底部样式*/
+.foot{height: auto; overflow: hidden; background: #f1f1f1; border-top: 1px solid #c8c8c8;}
+.foot .bottom{width: 100%; overflow: hidden; padding: 10px 0 10px 0; border-bottom: 1px #c8c8c8 dotted;}
+.foot ul{float: left; text-align: left; line-height: 23px; list-style-type: disc; list-style-position: inside; width: 160px;}
+.foot ul.ul01{width: 160px; padding-right: 50px; padding-left: 10px; border-right: 1px #c8c8c8 dotted; list-style: none;}
+.foot ul li{text-indent: 15px;}
+.foot ul a,.friend p a{color: #585858;}
+.foot ul a:hover,.friend p a:hover{color: black;}
+.foot ul h2{width: 100%; height: 36px; line-height: 36px; font-family: "微软雅黑"; font-weight: 900; font-size: 14px; background: url(../../image/images/ln_A_18.png) no-repeat; text-indent: 36px;}
+.foot .friend{width: 100%; padding: 10px; overflow: hidden;}
+.foot .friend span{float: left; width: 62px; height: 31px; padding-top: 5px; padding-right: 25px; margin: 0 15px 0 15px; background: url(../../image/images/ln_A_17.png) repeat-y top right;}
+.foot .friend p{float: left; line-height: 36px; color: #585858;}
+.foot .zs p{text-align: center; padding: 5px 0; }
+/*右侧悬浮购物车和返回顶部*/
+.rightHover{position: fixed!important; right: -6px; _position: absolute;_bottom: auto;_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||13)));}
+.goTop{width: 60px;bottom: 10px;padding-bottom: 3px; z-index: 10001;}
+.GoToTop {width:48px; height: 30px; float: right;  border: 1px solid #ccc; border-right: none;}
+.goTop .GoToTop a { width: 100%; height: 100%;float: right; background: url(../../image/images/gotop.gif) white -44px -48px no-repeat;}
+.goTop .GoToTop a:hover {background: url(../../image/images/gotop.gif) white -44px 3px no-repeat;}
+.hoverCar{ float: right; position: relative; width: 60px; height: 70px; background: url(../../image/images/cart_pop_null.gif) no-repeat; margin-top: 10px; }
+.hoverCarWithGoods{ float: right;position: relative;  width: 60px; height: 70px; background: url(../../image/images/cart_pop_yes.gif) no-repeat; margin-top: 10px; }
+.hoverCar a,.hoverCarWithGoods a{ width: 47px; height: 100%; font-weight: 500;color: #000; text-align: center; line-height: 35px;float: right; font-size: 16px; font-family: "微软雅黑"}
+.hoverCar a:hover ,.hoverCarWithGoods a:hover {color: #688d16;}
+.hoverService{ float: right; z-index: 10002; width: 48px; height: 50px;  margin-top: 10px; border: 1px solid #ccc; border-right: none; position: relative;}
+.hoverService a.qqOnLineBg{background: url(../../image/images/hoverService.png) white 0px -48px no-repeat; float: left; height: 50px; width: 44px;}
+.hoverService a.qqOnLineBg:hover {background: url(../../image/images/hoverService.png) 0px 3px no-repeat;float: left; }
+.hoverService .qqOnLine{position: absolute; right: 60px; bottom: 0px; display: none; background: white;}
+.hoverService ul.ul01{width: 100px; padding-left: 10px;list-style: none;}
+.hoverService ul li{text-indent: 15px;}
+.hoverService ul a,.friend p a{color: #585858;}
+.hoverService ul a:hover,.friend p a:hover{color: black;}
+.hoverTwocode{z-index: 10002; width: 48px; height: 50px; background: white;  margin-top: 10px;  float: right;  border: 1px solid #ccc; border-right: none; position: relative;}
+.hoverTwocode a.backlink {background: url(../../image/images/gotop.gif) -98px -43px no-repeat; width: 44px; height: 50px; float: left;}
+.hoverTwocode a.backlink:hover {background:url(../../image/images/gotop.gif) -98px 8px no-repeat;}
+.hoverTwocode .qrcode{position: absolute; text-align: center; bottom: -5px; right: 53px; border: 1px solid #e8e8e8; display:none; background: white;}
+.hoverTwocode .qrcode a{display: block; padding: 3px; padding-bottom: 0px;}
+.hoverTwocode p{height: 25px; line-height: 25px; width:98px;}
+.listConetnt .curtUrl{width: 100%; height: 32px; line-height: 32px; color: #585858; text-indent: 14px; }
+.listConetnt .curtUrl b a{font-size: 14px;color:#585858;font-weight: 700;}
+.listConetnt .curtUrl span{margin: 0 6px;}
+.bb{font-size: 12px; font-weight: bold; color: #585858; padding: 10px 8px; line-height: 18px;}
+.lists{width: 100%; overflow: hidden;}
+.lists .lRight{width: 990px; overflow: hidden; float: right;}
+#GoodsMsg {
+    width: 300px;
+    bottom: 120px;
+    right: 42px;
+    *right: 50px;
+    padding-right: 12px;
+    position: fixed;
+    _position: absolute;
+    _bottom: auto;
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||13)));
+    z-index: 10005;
+    background: #688d16;
+    background:  url(../../image/images/GoodsMsgRight.png) right top no-repeat;
+    display: none;
+    
+}
+#GoodsMsg .MsgContent {
+    background: #c5d743;
+    width: 283px;
+    float: left;
+    padding: 10px;
+    height: 60px;
+}
+#GoodsMsg .MsgContent p{
+    width: 210px;
+    float: right;
+    line-height: 150%;
+    font-size: 12px;
+    font-family: '微软雅黑';
+}
+#GoodsMsg .MsgContent .GoodsThumb {float: left;margin-right: 5px; display: inline;}

@@ -1,0 +1,82 @@
+@charset "utf-8"; 
+/* 
+    Document   : list 列表样式
+    Created on : 2014-1-17, 16:11:19
+    Author     : l
+    Description:
+    Purpose of the stylesheet follows.
+*/
+.lists .lLeft{width: 210px; overflow: hidden;border-top: 3px solid #d8d8d8;}
+.lists .lLeft .foodCaseChose{width: 208px; border: 1px solid #e8e8e8; overflow: hidden; margin-top: 10px;}
+.lists .lLeft .foodCaseChose h5{padding: 10px 8px; font-size: 12px; font-weight: bold; color: #585858;}
+.lists .lLeft .foodCaseChose ul{width: 180px; margin: 0 auto; padding: 0 5px;}
+.lists .lLeft .foodCaseChose ul li{width: 100%; overflow: hidden; padding: 8px 0; border-bottom: 1px dotted #e8e8e8;}
+.lists .lLeft .foodCaseChose ul .on a {background: #36B00C; padding: 5px; color: #fff;}
+.lists .lLeft .foodCaseChose ul li a{color: #888;}
+.lists .lLeft .foodCaseChose ul li a:hover{text-decoration: underline; color: #585858;}
+.lists .lRight .sequence{width: 956px;padding: 5px 15px; overflow: hidden; border: 1px solid #e8e8e8;}
+.lists .lRight .sequence span{height: 26px; line-height: 26px;}
+.lists .lRight .sequence ul{overflow: hidden;}
+.lists .lRight .sequence ul li{border: 1px solid #e8e8e8; float: left; margin-left: 5px; height: 24px; line-height: 24px;}
+.lists .lRight .sequence ul li a{padding: 10px 10px; color: black;}
+.lists .lRight .sequence ul li a:hover,.lists .lRight .sequence ul li .on{border: #90c31f; background: #90c31f; color: red;}
+.lists .lRight .sequence span.fr{color: red; font-size: 12px; padding-right: 10px;  margin-left: 10px;}
+.lists .lRight .salesPromotion dd{float: left;width: 256px; overflow: hidden; padding-right: 5px;}
+.lists .lRight .salesPromotion dd .fr{width: 150px; overflow: hidden; line-height: 18px;}
+.lists .lRight .salesPromotion dd .fr a{color: #585858;}
+.lists .lRight .salesPromotion dd .fr a:hover{text-decoration: underline;}
+.lists .lRight .salesPromotion dd .buy a{float: left;width: 88px; height: 30px; overflow: hidden; text-indent: -10em; background: url(../images/ln_List_02.png) no-repeat; margin-top: 5px;}
+.lists .lRight .salesPromotion dd .buy a:hover{background-position: 0px -30px;}
+.lists .lRight .salesPromotion dd .buy a:active{background-position: 0px -60px;}
+.lists .lRight .goods{width: 990px; overflow: hidden;float: left;z-index: 1;}
+.lists .lRight .goods ul{width: 100%; overflow: hidden; z-index: 1;}
+.lists .lRight .goods ul li{ float: left;width: 213px;z-index: 0; height: 335px; overflow: hidden; padding: 6px; padding-bottom: 13px; margin: 10px; border: 1px solid #e8e8e8;  float: left; _display:inline; }
+.lists .lRight .goods ul li div {}
+.lists .lRight .goods ul li div a{display: block; width: 211px; padding: 1px; margin: auto;}
+.lists .lRight .goods ul li div a:hover{border: 1px #36B00C dashed; padding: 0px;}
+.lists .lRight .goods ul li b{position: absolute;float: right;margin-left: 180px; margin-top: -220px;z-index: 1;}
+.lists .lRight .goods ul li p{text-indent: 5px; color: #888; padding: 4px 0;}
+.lists .lRight .goods ul li strong{font-weight:bold; font-size: 18px; color:#ac2c2c;}
+.lists .lRight .goods ul li a,.lists .lLeft .listLeft2 li a{color: #585858;}
+.lists .lRight .goods ul li a:hover{color: red;}
+.lists .lRight .goods ul li p font a{color: #90c31f;}
+.lists .lRight .goods ul li p font a:hover{color: red;}
+.lists .lRight .goods ul li p .buy{float: left; width: 99px; height: 26px; overflow: hidden; background: url(../images/ln_List_05.png) no-repeat; text-indent: -10em; margin-left: 5px;}
+.lists .lRight .goods ul li p .buy:hover{background-position: -99px 0px}
+.lists .lRight .goods ul li p span.fl input{ width: 28px; height: 22px; border: 1px solid #e8e8e8; color: #888; text-align: center; }
+.lists .lLeft .listLeft1{width: 208px; border: 1px solid #e8e8e8; border-top: none; overflow: hidden;}
+
+.lists .lLeft .listLeft1 li{width: 100%; overflow: hidden;}
+.lists .lLeft .listLeft1 li div{width: 100%; height: 32px; border-top: 1px solid #d8d8d8;}
+.lists .lLeft .listLeft1 li div b{float: left; width: 19px; height: 19px;overflow: hidden;margin: 7px 12px 0 6px; background: url(../../image/product/ln_List_01.png) no-repeat 0 -19px; font-weight: bold;}
+.lists .lLeft .listLeft1 li .on b {background: url(../../image/product/ln_List_01.png) no-repeat 0 0;}
+.lists .lLeft .listLeft1 li div a{color: #585858; float: left; font-size: 14px; line-height: 32px;}
+.lists .lLeft .listLeft1 li ol{width: 100%; overflow: hidden; padding: 8px 0; border-top: 1px solid #e8e8e8;}
+.lists .lLeft .listLeft1 li ol li{width: 100%; padding: 6px 0; line-height: 18px; text-indent: 3em;}
+.lists .lLeft .listLeft1 li ol a{color: #181818;}
+.lists .lLeft .listLeft1 li ol a:hover{text-decoration: underline;}
+.lists .lLeft .listLeft2{width: 208px; border: 1px solid #e8e8e8; overflow: hidden;}
+.lists .lLeft .listLeft2 .time{width: 100%; font-size: 16px; font-weight: bold; color: red; overflow: hidden; line-height: 24px; text-align: center;}
+.lists .lLeft .listLeft2 .cut{width: 160px; height: 100px; overflow: hidden; margin: 0 auto;}
+.lists .lLeft .listLeft2 p{text-align: center; line-height: 26px;}
+.lists .lLeft .listLeft2 p a:hover{text-decoration: underline;}
+.lists .lLeft .listLeft2 p strong{font-weight: bold; font-size: 16px; color: #ac2c2c;}
+.lists .lLeft .listLeft2 p small{font-weight: normal;}
+.lists .lLeft .listLeft2  li b {position: absolute;margin-left: 165px;display: inline;margin-top: -10px;}
+.lists .lLeft .listLeft4 ul{width: 180px; padding: 0 5px; margin: auto;}
+.lists .lLeft .listLeft4 ul li{width: 100%; overflow: hidden; padding: 8px 0; border-bottom: 1px dotted #e8e8e8;float: left;}
+.lists .lLeft .listLeft4 ul li small{float: left; width: 18px; height: 18px; line-height: 18px; margin-right: 5px; overflow: hidden; font-size: 12px; text-align: center;background: url(../images/ln_List_02.gif) no-repeat 0 -18px;}
+.lists .lLeft .listLeft4 ul li small.red{background-position: 0 0;}
+.lists .lLeft .listLeft4 ul li.sub .img{display: none;}
+.lists .lLeft .listLeft4 ul li p{line-height: 18px; text-align: left; padding-left: 3px;}
+.lists .lLeft .listLeft4 ul li.sub .tit{height: 19px; overflow: hidden; margin-left: 5px;}
+.lists .lLeft .listLeft4 ul li.checked .tit{width: 100px; height: auto; }
+.lists .lLeft .listLeft4 ul li strong{font-size: 12px; font-weight: 700; color: red;}
+.PageList {float: right;}
+.PageList ul.yiiPager{display: inline-block;margin:50px 28px 50px 0;}
+.PageList ul.yiiPager a{display: block; float: left;margin: 0 4px;}
+.PageList ul.yiiPager a:link, ul.yiiPager a:visited{border: #c8c2c0 1px solid; padding: 4px 7px; color: #666;}
+.PageList ul.yiiPager .page a:hover{color: #eb6100; border: #c8c2c0 1px solid; }
+.PageList ul.yiiPager .selected a{background: #eb6100; border: #eb6100 1px solid;}
+.PageList ul.yiiPager .selected a:visited{color: white;}
+.PageList ul.yiiPager .selected a:hover{color: white;}

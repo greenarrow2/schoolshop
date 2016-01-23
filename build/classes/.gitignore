@@ -1,0 +1,11 @@
+/META-INF/
+/applicationContext.xml
+/com/
+/config.properties
+/ehcache.xml
+/jdbc.properties
+/log4j.properties
+/oscache.properties
+/oscache.tld
+/springmvc.xml
+/type.properties
